@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* font-family: 'DM Sans', sans-serif; */
+
+/* colors */
+
+:root {
+	--dark-grey  : #1d1d1d;
+	--grey       : #5e5e5e;
+	--orange     : #d8871d;
+	--light-grey : #fffdfd; 
+}
+
+html, body {
+	font-family: 'DM Sans', sans-serif;
+	color: var(--dark-grey);
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 100px;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+p {
+	margin: 20px 0 10px 0;
+	font-size: 1.1rem;
+}
+
+.container {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background-color: var(--light-grey);
+}
+
+.navigation {
+	display: none;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 700;
+	position: absolute;
+	top: 30px;
+	left: 100px;
+	z-index: 10;
+}
+
+.home__img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 110%;
+}
+
+
+.home__content {
+	max-width: 600px;
+	position: relative;
+	z-index: 10;
+}
